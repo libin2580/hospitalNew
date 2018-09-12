@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0a2893</color>
+    <color name="green_light">#10954d</color>
+    <color name="green_dark">#026d38</color>
+    <color name="dot_dark_screen1">#10954d</color>
+    <color name="dot_dark_screen2">#10954d</color>
+    <color name="dot_dark_screen3">#10954d</color>
+    <color name="dot_dark_screen4">#10954d</color>
+    <color name="ZulekhaWhite">#ffffff</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#3F51B5</color>
+    <color name="dot_light_screen2">#3F51B5</color>
+    <color name="dot_light_screen3">#3F51B5</color>
+    <color name="dot_light_screen4">#3F51B5</color>
+    <color name="butnbakcolr">#10315a</color>
+    <color name="White">#ffffff</color>
+    <color name="blue">#083087</color>
+    <color name="gray_darker">#262626</color>
+    <color name="dot_inactive">#ffffff</color>
+    <color name="dot_active">#3F51B5</color>
+</resources>

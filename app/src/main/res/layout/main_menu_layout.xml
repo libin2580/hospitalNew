@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/top_layout">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/progress_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:background="#FF3F51B5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:id="@+id/nav_icon">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_menu_white_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:text="ZULEKHA"
+                        android:fontFamily="sans"
+
+                        android:textStyle="bold"
+                        android:textSize="@dimen/heading_size"
+                        android:id="@+id/toolbar_title_new"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1">
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--first 3 box start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/department"
+
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:text="Department/ \nDoctors"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/appointments"
+                                android:gravity="center"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Appointments\n"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/livechat"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Live Chat\n"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--first 3 box enc-->
+
+                    <!--second 3 box start-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/patientportal"
+
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Patient Portal"
+                                android:textColor="@android:color/black"
+
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView_contact_us"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/contactus"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView_rate_this"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Contact Us \n"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/image_viewcme"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/cme"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView_cme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="CME\n"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/my_account"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+
+                                android:text="My Account\n"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--second 3 box end-->
+
+                    <!--third 3 box start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/wifi"
+
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Free WIFI  Access"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/call_apmt"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Call For\n Appointment"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--&gt;-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="@dimen/_75sdp"-->
+                        <!--android:layout_height="@dimen/_75sdp"-->
+                        <!--android:background="@drawable/wifi"-->
+                        <!--android:scaleType="fitXY"-->
+
+                        <!--android:id="@+id/imageView7"-->
+                        <!--/>-->
+                        <!--<TextView-->
+                        <!--android:text="Free Wifi"-->
+                        <!--android:textSize="@dimen/_10sdp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/textView7"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="@dimen/_75sdp"-->
+                        <!--android:layout_height="@dimen/_75sdp"-->
+                        <!--android:background="@drawable/call_apmt"-->
+
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:id="@+id/imageView8"-->
+                        <!--/>-->
+                        <!--<TextView-->
+                        <!--android:text="Call for Appointment"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="@dimen/_10sdp"-->
+                        <!--android:id="@+id/textView8"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/chat"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Feedback\n"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp"
+
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--third 3 box end-->
+
+
+                    <!--fourth 3 box start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/image_viewlabreport"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/labreport"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView_LAP_REPRT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+
+                                android:text="View Lab Reports"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="@dimen/_75sdp"-->
+                        <!--android:layout_height="@dimen/_75sdp"-->
+                        <!--android:background="@drawable/chat"-->
+
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:id="@+id/image_viewinsurance_partners"-->
+                        <!--/>-->
+                        <!--<TextView-->
+                        <!--android:text="Insurance Partners"-->
+                        <!--android:textSize="@dimen/_10sdp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/textView_insurance_partners"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--&gt;-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="@dimen/_75sdp"-->
+                        <!--android:layout_height="@dimen/_75sdp"-->
+                        <!--android:background="@drawable/wifi"-->
+                        <!--android:scaleType="fitXY"-->
+
+                        <!--android:id="@+id/imageView10"-->
+                        <!--/>-->
+                        <!--<TextView-->
+                        <!--android:text="Free Wifi"-->
+                        <!--android:textSize="@dimen/_10sdp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/textView10"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="@dimen/_75sdp"-->
+                        <!--android:layout_height="@dimen/_75sdp"-->
+                        <!--android:background="@drawable/call_apmt"-->
+
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:id="@+id/imageView11"-->
+                        <!--/>-->
+                        <!--<TextView-->
+                        <!--android:text="Call for Appointment"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="@dimen/_10sdp"-->
+                        <!--android:id="@+id/textView11"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView_insurance_partners"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+
+                                android:background="@drawable/pay_online"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView_insurance_partners"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Pay Online"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/image_utilities"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+
+                                android:background="@drawable/utilitiesnew"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView_utilities"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="utilities"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView_about_us"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/insurance_approval_tracking"
+                                />
+
+                            <TextView
+                                android:id="@+id/textView_about_us"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Insurance\n Tracking"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/image_careerportal"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/careear"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView_careerportal"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Career Portal\n"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_8sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/image_educational_lef"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+
+                                android:background="@drawable/leaflet"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView_eductnl_leafelet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Educational\nLeaflets"
+                                android:textColor="@android:color/black"
+
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_7sdp" />
+
+                        </LinearLayout>
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--&gt;-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="@dimen/_75sdp"-->
+                        <!--android:layout_height="@dimen/_75sdp"-->
+                        <!--android:background="@drawable/wifi"-->
+                        <!--android:scaleType="fitXY"-->
+
+                        <!--android:id="@+id/imageView10"-->
+                        <!--/>-->
+                        <!--<TextView-->
+                        <!--android:text="Free Wifi"-->
+                        <!--android:textSize="@dimen/_10sdp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/textView10"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="@dimen/_75sdp"-->
+                        <!--android:layout_height="@dimen/_75sdp"-->
+                        <!--android:background="@drawable/call_apmt"-->
+
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:id="@+id/imageView11"-->
+                        <!--/>-->
+                        <!--<TextView-->
+                        <!--android:text="Call for Appointment"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="@dimen/_10sdp"-->
+                        <!--android:id="@+id/textView11"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+
+                    </LinearLayout>
+                    <!--fourth 3 box end-->
+                    <LinearLayout
+                        android:id="@+id/slider_lay1"
+                        android:orientation="vertical"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"></LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/slider_lay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".18"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent" />
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/layoutDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"></LinearLayout>
+                <!-- android:background="#eae9e9"-->
+                <!--<WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/webView"></WebView>
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+
+                />
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/custom_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    custom:selected_color="#0095BF"
+                    custom:unselected_color="#55333333"
+                    custom:selected_drawable="@drawable/bird"
+                    custom:shape="oval"
+                    custom:selected_padding_left="5dp"
+                    custom:selected_padding_right="5dp"
+                    custom:unselected_padding_left="5dp"
+                    custom:unselected_padding_right="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    custom:selected_width="6dp"
+                    custom:selected_height="6dp"
+                    custom:unselected_width="6dp"
+                    custom:unselected_height="6dp"
+                    android:layout_marginBottom="20dp"
+                    />-->
+                <ProgressBar
+                    android:id="@+id/progress_bar_slider"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:visibility="gone"
+
+
+        android:indeterminateDrawable="@drawable/my_wheel"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

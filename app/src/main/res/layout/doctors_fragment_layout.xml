@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/lt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/_40sdp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15">
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/sign_out_option" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/doc_linearlayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:typeface="sans"
+                android:text="Doctors"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="@dimen/heading_size"
+                android:gravity="center"
+                android:id="@+id/textView20"
+
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/floatind_edit_linearlayout">
+
+
+            <com.arlib.floatingsearchview.FloatingSearchView
+                android:id="@+id/floating_search_view2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                app:floatingSearch_searchHint="search..."
+                app:floatingSearch_suggestionsListAnimDuration="250"
+                app:floatingSearch_showSearchKey="true"
+                app:floatingSearch_hintTextColor="@android:color/black"
+                app:floatingSearch_clearBtnColor="@android:color/black"
+
+                app:floatingSearch_dividerColor="@android:color/black"
+                app:floatingSearch_viewTextColor="@android:color/black"
+                app:floatingSearch_actionMenuOverflowColor="@android:color/black"
+                app:floatingSearch_leftActionColor="@android:color/black"
+                app:floatingSearch_menuItemIconColor="@android:color/black"
+                app:floatingSearch_suggestionRightIconColor="@android:color/black"
+
+
+                app:floatingSearch_backgroundColor="@color/dot_light_screen1"
+                app:floatingSearch_leftActionMode="showSearch"
+                app:floatingSearch_menu="@menu/menu_main"/>
+            <EditText
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView40"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+
+
+                android:drawablePadding="@dimen/_15sdp"
+                android:visibility="gone"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+
+            android:id="@+id/search_button">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@android:drawable/ic_menu_search"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/close_button"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="@drawable/ic_close_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:requiresFadingEdge="vertical"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lt"
+        android:layout_marginTop="5dp"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+
+
+
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

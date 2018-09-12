@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "258212809347",
+    "firebase_url": "https://zulekha-hospital-281f4.firebaseio.com",
+    "project_id": "zulekha-hospital-281f4",
+    "storage_bucket": "zulekha-hospital-281f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258212809347:android:63ea1d158c53ab13",
+        "android_client_info": {
+          "package_name": "com.zulekhahospitals.zulekhaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258212809347-mo213nonu5djumab66dd7tctnd9sdeo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zulekhahospitals.zulekhaapp",
+            "certificate_hash": "d78acca61b13a9dd076ecad6f7e15483df192720"
+          }
+        },
+        {
+          "client_id": "258212809347-39qu3ve93ocj0tmd0iqv3icrqtljb61k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zulekhahospitals.zulekhaapp",
+            "certificate_hash": "20d393389d20c350e42f0c10d18ca0539de10081"
+          }
+        },
+        {
+          "client_id": "258212809347-fhhrrlv1e5arln5sdcvnhiks3g72fpa1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zulekhahospitals.zulekhaapp",
+            "certificate_hash": "9e2e0dc4bddceaea03f7fc9adabfaad83737df48"
+          }
+        },
+        {
+          "client_id": "258212809347-74l4v4joe3lm94vbc9tm64q5vvdcmqtl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zulekhahospitals.zulekhaapp",
+            "certificate_hash": "de8de7b6c5c6186aa774f7a44e973fe7b68a23f3"
+          }
+        },
+        {
+          "client_id": "258212809347-8ssquosdj0bdnneiiqkfqfq4d5983phi.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "258212809347-8tje8d36djaktiggnsf67vj1dg9mgt5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcRgNLElpc_V2jCUqgVI_aN-pMsv_8zWw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258212809347-3qmi5ovvvhr14p5n9ir5s17dt5uashpi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.meridian.Zulekha"
+              }
+            },
+            {
+              "client_id": "258212809347-8ssquosdj0bdnneiiqkfqfq4d5983phi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

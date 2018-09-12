@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/lt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15">
+            <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/sign_out_option" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/dep_linearlayout">
+
+            <TextView
+                android:text="Doctors/Departments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView20"
+                android:textStyle="bold"
+                android:textSize="@dimen/heading_size"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/floatind_edit_linearlayout">
+
+
+            <com.arlib.floatingsearchview.FloatingSearchView
+                android:id="@+id/floating_search_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                app:floatingSearch_searchHint="search..."
+                app:floatingSearch_suggestionsListAnimDuration="250"
+                app:floatingSearch_showSearchKey="true"
+                app:floatingSearch_hintTextColor="@android:color/black"
+                app:floatingSearch_clearBtnColor="@android:color/black"
+
+                app:floatingSearch_dividerColor="@android:color/black"
+                app:floatingSearch_viewTextColor="@android:color/black"
+                app:floatingSearch_actionMenuOverflowColor="@android:color/black"
+                app:floatingSearch_leftActionColor="@android:color/black"
+                app:floatingSearch_menuItemIconColor="@android:color/black"
+                app:floatingSearch_suggestionRightIconColor="@android:color/black"
+
+
+                app:floatingSearch_backgroundColor="@color/dot_light_screen1"
+                app:floatingSearch_leftActionMode="showSearch"
+                app:floatingSearch_menu="@menu/menu_main"/>
+            <EditText
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView40"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+
+
+                android:drawablePadding="@dimen/_15sdp"
+                android:visibility="gone"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible"
+            android:id="@+id/search_button">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="@android:drawable/ic_menu_search"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/close_button"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="@drawable/ic_close_black_24dp"/>
+        </LinearLayout>
+
+        <!--<ImageView
+            android:id="@+id/back_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/sign_out_option" />
+
+        <TextView
+            android:text="Departments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/textView20"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13sdp"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_3sdp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_search_black_24dp"/>-->
+
+
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swiperefreshlayout"
+        android:layout_below="@+id/lt"
+        android:layout_above="@+id/layoutDots">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+
+        android:padding="@dimen/_3sdp"
+        android:layout_height="match_parent"
+
+        android:requiresFadingEdge="vertical"
+
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview2"
+        android:layout_width="match_parent"
+android:visibility="gone"
+        android:padding="@dimen/_3sdp"
+        android:layout_height="match_parent"
+
+        android:requiresFadingEdge="vertical"
+
+
+        />
+</LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_main_background"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/dubai_tab_layout"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZH Dubai"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/white"
+               />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/sharjah_tab_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZH Sharjah"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/zmc_tab_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZMC"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

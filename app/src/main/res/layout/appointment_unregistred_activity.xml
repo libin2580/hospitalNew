@@ -1,0 +1,528 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+
+
+    >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:background="@android:drawable/ic_media_next"
+            android:id="@+id/imageView3"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_18sdp"
+            android:id="@+id/textView" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/patient_nam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+
+                android:layout_margin="@dimen/_2sdp"
+                android:paddingLeft="20dp"
+
+                android:layout_marginTop="@dimen/_2sdp"
+
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+
+                android:hint="Patient Name"
+                android:windowSoftInputMode="stateHidden"
+                android:background="@drawable/edt_back"
+
+                android:gravity="left|center"
+
+
+                android:textSize="@dimen/_12sdp" />
+            <EditText
+                android:id="@+id/mob_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:paddingLeft="20dp"
+
+                android:layout_marginTop="@dimen/_2sdp"
+
+                android:windowSoftInputMode="stateHidden"
+                android:inputType="phone"
+
+                android:textColor="#000000"
+                android:background="@drawable/edt_back"
+                android:hint="Mobile No"
+
+
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/eml"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_2sdp"
+
+
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:windowSoftInputMode="stateHidden"
+                android:inputType="textEmailAddress"
+
+                android:textColor="#000000"
+                android:background="@drawable/edt_back"
+                android:hint="Email"
+
+
+                android:textSize="@dimen/_12sdp" />
+            
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_2sdp"
+
+                android:paddingLeft="20dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textColor="#000000"
+                android:background="@drawable/edt_back"
+                android:hint="Nationality"
+                android:id="@+id/natl"
+
+                android:textSize="@dimen/_12sdp" ></Spinner>
+            <!--<EditText
+                android:id="@+id/natl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_2sdp"
+
+                android:paddingLeft="20dp"
+                android:layout_marginTop="@dimen/_2sdp"
+
+                android:windowSoftInputMode="stateHidden"
+                android:inputType="textPersonName"
+
+                android:textColor="@android:color/darker_gray"
+                android:background="@drawable/edt_back"
+                android:hint="Nationality"
+
+
+                android:textSize="@dimen/_12sdp" />-->
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/edt_back"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                >
+
+                <RadioButton
+                    android:id="@+id/male_id"
+                    android:text="Male"
+                    android:typeface="sans"
+                    android:checked="true"
+                    android:textColor="@android:color/black"/>
+
+                <RadioButton
+                    android:id="@+id/female_id"
+                    android:text="Female "
+                    android:typeface="sans"
+                    android:textColor="@android:color/black"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/patient_type"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/edt_back"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp" >
+
+                <RadioButton
+                    android:id="@+id/sp"
+                    android:text="Self Paying"
+                    android:typeface="sans"
+                    android:checked="true"
+                    android:textColor="@android:color/black"/>
+
+                <RadioButton
+                    android:id="@+id/i"
+                    android:text="Insurance "
+                    android:typeface="sans"
+                    android:textColor="@android:color/black"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/dob_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/bottom_menu"
+                android:layout_margin="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:windowSoftInputMode="stateHidden"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:editable="false"
+                android:clickable="true"
+                android:textColor="#000000"
+
+                android:hint="Dob"
+                android:background="@drawable/edt_back"
+
+                android:gravity="left|center"
+
+
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:id="@+id/aapoint_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/bottom_menu"
+                android:layout_margin="@dimen/_2sdp"
+
+                android:windowSoftInputMode="stateHidden"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:editable="false"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:hint=" Appointment Date"
+                android:background="@drawable/edt_back"
+
+                android:gravity="left|center"
+
+
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/aapoint_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/bottom_menu"
+                android:layout_margin="@dimen/_2sdp"
+
+                android:windowSoftInputMode="stateHidden"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:editable="false"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:hint="Appointment Time"
+                android:background="@drawable/edt_back"
+
+                android:gravity="left|center"
+
+
+                android:textSize="@dimen/_12sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <Spinner
+                        android:id="@+id/brchs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:background="@drawable/edt_back"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:typeface="sans" />
+
+                </RelativeLayout>
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <Spinner
+                        android:id="@+id/div"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:background="@drawable/edt_back"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:typeface="sans" />
+
+                </RelativeLayout>
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <Spinner
+                        android:id="@+id/deptmnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:background="@drawable/edt_back"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:typeface="sans" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="Stay ahead from the rest by choosing *Fast Track Clinic"
+                            android:textColor="@color/gray_darker"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight=".7"
+                        android:background="@drawable/layer_80"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/bullent_zh">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:gravity="center|left"
+                                android:text="No waiting time"
+                                android:textAllCaps="false"
+                                android:textColor="@color/gray_darker"
+
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight=".7"
+                        android:background="@drawable/layer_80"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/bullent_zh">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:gravity="center|left"
+                                android:text="One-on-one assistance"
+                                android:textAllCaps="false"
+                                android:textColor="@color/gray_darker"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight=".7"
+                        android:background="@drawable/layer_80"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/bullent_zh">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:gravity="center|left"
+                                android:text="Free Refreshment"
+                                android:textAllCaps="false"
+                                android:textColor="@color/gray_darker"
+
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/fastrack_clinic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_margin="@dimen/_2sdp"
+
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <RadioButton
+                                android:id="@+id/stay_ahead"
+                                android:checked="true"
+                                android:text="Yes"
+                                android:textColor="@android:color/black"
+                                android:typeface="sans" />
+
+                            <RadioButton
+                                android:id="@+id/no_ahead"
+                                android:text="No"
+                                android:textColor="@android:color/black"
+                                android:typeface="sans" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/submt_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:text="Submit"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/btn_back"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"></LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
+</RelativeLayout>

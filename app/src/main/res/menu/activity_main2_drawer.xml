@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navcont_cntus"
+
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_abt"
+
+            android:title="About Zulekha Hospital" />
+        <item
+            android:id="@+id/nav_portal"
+
+            android:title="Career Portal" />
+        <item
+            android:id="@+id/nav_edulft"
+
+            android:title="Educational Leaflet" />
+
+        <item
+            android:id="@+id/nav_vlab"
+
+            android:title="View Lab Report" />
+        <item
+            android:id="@+id/nav_cmplnts"
+
+            android:title="Complaints and Suggestions" />
+        <item
+            android:id="@+id/nav_ip"
+
+            android:title="Insurance Partners" />
+        <item
+            android:id="@+id/nav_chat"
+
+            android:title="Live Chat" />
+
+        <item
+            android:id="@+id/nav_rate"
+
+            android:title="Rate This App" />
+        <item
+            android:id="@+id/nav_cme"
+
+            android:title="CME" />
+        <item
+            android:id="@+id/nav_logout"
+
+            android:title="Logout"  />
+        <item
+            android:id="@+id/nav_branch"
+
+            android:title="Change Branch"  />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ZulekhaWhite"
+    >
+
+    <LinearLayout
+        android:id="@+id/lt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/_40sdp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:id="@+id/nav_icon">
+
+            <ImageView
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:id="@+id/back_image"
+                android:background="@drawable/sign_out_option"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:typeface="sans"
+                android:text="Complaints and Suggestions"
+                android:textStyle="bold"
+                android:textSize="@dimen/heading_size"
+                android:textAllCaps="true"
+                android:id="@+id/header_text"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lt"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+        >
+            <ImageView
+                android:id="@+id/zulekha_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_below="@+id/header_text"
+                android:layout_centerHorizontal="true"
+
+
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <EditText
+                    android:id="@+id/name_comp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@drawable/edt_back"
+                    android:hint="Name"
+
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorAccent"
+                    android:typeface="sans"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorAccent">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/mail_comp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edt_back"
+                    android:hint="Email address"
+                    android:inputType="textWebEmailAddress"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColorHint="@color/colorAccent"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:typeface="sans"
+                    android:textColor="@color/colorAccent" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/descr_comp"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edt_back"
+                    android:textSize="@dimen/_12sdp"
+                    android:hint="Enter your complaints/suggestions here."
+                    android:gravity="center"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:padding="5dp"
+                    android:typeface="sans" 
+                    android:textColor="@color/colorAccent">
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/sub_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                  
+                    android:orientation="vertical" >
+
+
+
+                    <Button
+                        android:id="@+id/submit_sugg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/ZulekhaWhite"
+                        android:background="@drawable/btn_back"
+                        android:text="Submit"
+                        android:typeface="sans" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:typeface="sans"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

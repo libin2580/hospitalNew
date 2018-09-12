@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:id="@+id/nav_user_name"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_my_account"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Account"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_gravity="left|center"
+    android:gravity="left|center"
+    android:paddingLeft="@dimen/_30sdp"
+    android:background="@drawable/choose_color"
+
+    android:id="@+id/nav_contact_us"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_location_map">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Map" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_about_aulekha_hospital">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Zulekha Hospital"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_educational_leaflet">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Educational Leaflet"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_career_portal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Career Portal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_gravity="left|center"
+    android:gravity="left|center"
+    android:paddingLeft="@dimen/_30sdp"
+    android:background="@drawable/choose_color"
+
+    android:id="@+id/nav_cme">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CME"/>
+
+</LinearLayout>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/line"
+android:backgroundTint="#559f58"
+
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_view_lab_report">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Lab Report"
+/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_insurance_partners">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insurance Partners"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_utilities">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utilities"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_chat">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live Chat"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_change_branch">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Branch" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_feedback">
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_complaints_and_suggestions">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaints/Suggestions"
+/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+        />
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_rate_this_app">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate This App"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:backgroundTint="#559f58"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_logout"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/choose_color"
+
+        android:id="@+id/nav_login"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+
+    </LinearLayout>
+
+</LinearLayout>

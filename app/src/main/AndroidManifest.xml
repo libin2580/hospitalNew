@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zulekhahospitals.zulekhaapp"
+    android:versionCode="25"
+    android:versionName="1.4.2">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:allowBackup="true"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon"
+
+        >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"
+
+           />
+           <!--    android:value="AIzaSyChJNhteWiI_wmt01QTHUaJHCiTfKyG46Y"  android:value="@string/google_maps_key"-->/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".newintro.Splash_Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".newintro.New_WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".login.Registration_Form"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".branches.Screen_Selection_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".departments.Department_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".doctors.Doctor_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".appointment.ZH_Appointment_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".utility.UtilityFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.RewardSystems_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".utility.Bmi_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".utility.Set_Remainder_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WifiFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.ComplaintFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".insurance.Insurance_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.ContactFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".details.Doctor_Desc_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".details.Doctr_Apmt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.About_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".edu_leaflet.Educational_leaflet_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".edu_leaflet.Educational_leafle_pdf_Fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.CmeFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.CareerFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".imagecapture.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".imagecapture.Gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".imagecapture.DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.LabReport"
+            android:screenOrientation="portrait" />
+        <!--<activity
+            android:name=".login.MainActivityNw"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".login.NewReg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".feedback.LoginActivityFeedBack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".feedback.QuestionsNw"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LiveChatFragment"
+            android:screenOrientation="portrait" />
+        <activity android:name=".sidebar.Pay_Online_Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".insurance.InsurenceTracking"
+            android:screenOrientation="portrait"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <!--<activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+
+       <!-- <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />-->
+        <!-- Firebase Notifications -->
+        <service android:name=".firebase.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <service android:name=".firebase.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- <service android:name=".GPSTracker"/> -->
+        <activity
+            android:name=".utility.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MapsActivityNew"
+            android:label="@string/title_activity_maps_new"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".myaccount.MyAccount"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".myaccount.ChangeAccountPassword"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".myaccount.EditProfile"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".feedback.feedbackloginform"
+            android:screenOrientation="portrait"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2a586b5f5dc42de65e99f266eabd03a245b1e72c" />
+    </application>
+
+</manifest>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="@dimen/_50sdp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:layout_gravity="center|right"
+        android:gravity="center|right"
+        android:id="@+id/nav_icon">
+
+        <ImageView
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:id="@+id/back_image"
+            android:background="@drawable/sign_out_option"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".8"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:typeface="sans"
+            android:text="Appointment"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading_size"
+            android:id="@+id/header_text"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".1">
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/border_third">
+
+        <Button
+            android:id="@+id/fragment_register"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bottom_menu"
+            android:layout_margin="0dp"
+            android:layout_marginTop="@dimen/_56sdp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/colorAccent"
+            android:background="@android:color/white"
+            android:text="Registered"
+            android:textSize="@dimen/_13sdp" />
+
+        <Button
+            android:id="@+id/fragment_unregister"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bottom_menu"
+            android:layout_margin="0dp"
+            android:layout_marginRight="@dimen/_56sdp"
+            android:layout_marginTop="@dimen/_54sdp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="Unregistered"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_text"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bordersecond"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fragment_registerk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Registered"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/fragment_unregisterk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="Unregistered"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bottom_menu"
+        >
+        <FrameLayout
+            android:id="@+id/frame_cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentTop="true">
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

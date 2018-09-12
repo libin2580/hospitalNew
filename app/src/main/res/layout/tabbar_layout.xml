@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <!-- The main content view -->
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            >
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_tab"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:background="@drawable/tabar_bg"
+            android:layout_height="fill_parent" />
+        <ImageButton
+            android:id="@+id/dep"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/tabar_bg"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+
+
+            android:src="@drawable/doctor_stethoscope" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/appoint"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/tabar_bg"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calendar" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/util"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/tabar_bg"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/tabar_bg"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:src="@drawable/house_outline" >
+        </ImageButton>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:background="@drawable/tabar_bg"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

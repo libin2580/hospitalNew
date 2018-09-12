@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/top_layout"
+    android:layout_gravity="center"
+    android:background="@drawable/splsh">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B8B8B8"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center|bottom"
+        android:visibility="gone"
+android:layout_marginRight="@dimen/_20sdp"
+        android:text="Zayed Foundation Events " />
+</LinearLayout>
